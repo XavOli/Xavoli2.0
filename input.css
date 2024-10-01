@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#navbar{
+    background-image: url('../assets/images/navbar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @apply grayscale;
+}
