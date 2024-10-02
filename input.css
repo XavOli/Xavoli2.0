@@ -2,55 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-#hero{
-    background-image: url('../assets/images/navbar.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: 0; /* Firefox */
+  }
 }
 
-.nav-link{
-    @apply hover:underline decoration-white hover:scale-110;
+.nav-link {
+  @apply hover:underline decoration-black hover:scale-110;
 }
 
-.hamburger{
-    curson:pointer;
-    width:20px;
-    height:20px;
-    transition:all 0.25s;
-    position:relative;
+/* Hamburger  */
+.hamburger {
+  curson: pointer;
+  width: 23px;
+  height: 23px;
+  transition: all 1.5s;
+  position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: black;
+  transform: rotate(0);
+  transition: all 1s;
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+.open {
+  transform: rotate(180deg);
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
-.hamburger-top, .hamburger-middle, .hamburger-bottom{
-    position:absolute;
-    width:22px;
-    height:2px;
-    top:0;
-    left:0;
-    background:white;
-    transform:rotate(0);
-    transition:all 0.5s;
+.section-padding {
+  @apply px-16 md:px-32 lg:px-48;
 }
 
-.hamburger-middle{
-    transform:translateY(7px);
-}
-
-.hamburger-bottom{
-    transform:translateY(14px);
-}
-
-.open{
-    transform:rotate(90deg);
-}
-
-.open .hamburger-top{
-    transform:rotate(45deg) translateY(6px) translateX(6px);
-}
-
-.open .hamburger-middle{
-    display:none;
-}
-
-.open .hamburger-bottom{
-    transform:rotate(-45deg) translateY(6px) translateX(-6px);
+/* Scroll transparency */
+.scroll-nav {
+  @apply opacity-90;
 }
