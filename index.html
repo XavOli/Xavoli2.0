@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="./js/script.js" defer></script>
+        
         <link rel="stylesheet" href="./css/style.css">
         <title>XavOli</title>
 
@@ -11,14 +11,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="no-scrollbar">
         <!-- Navbar container -->
-        <nav class="flex w-full justify-center bg-gray-100 px-16 py-4 md:px-32 lg:px-48 ">
+        <nav id="navCont" class="bg-[#E88D67] sticky top-0 flex w-full justify-center py-4 section-padding">
             <!--Navbar -->
-            <div id="navbar" class="relative flex w-full py-4 items-center justify-between  space-y-6 md:space-x-4 rounded-xl md:space-y-0 ">
+            <div id="navbar" class="relative flex w-full py-4 items-center justify-between space-y-6 md:space-x-4 rounded-xl md:space-y-0 ">
                 <!-- Logo -->
-                <a href="#">
-                    <img id="logo" src="./assets/logo/svg/logo-no-background-xs.svg" alt="" class="invert hover:scale-110">
+                <a href="#hero">
+                    <img id="logo" src="./assets/logo/svg/logo-no-background-xs.svg" alt="" class="hover:scale-110 invert">
                 </a>
 
                 <!-- Menu -->
@@ -40,31 +40,38 @@
         </nav>
         <!-- Hero-->
         <section id="hero">
-            <div class="flex flex-col-reverse md:flex-row items-start md:items-center space-y-8 space-y-reverse justify-center mx-auto py-12 px-16 md:space-x-8 md:space-y-0 md:px-32 lg:px-48">
-                <div class="flex flex-col w-100 md:w-1/2">
-                    <p class="text-2xl text-left md:text-left">
+            <div class="bg-[#F3F7EC] text-[#006989] flex flex-col-reverse md:flex-row items-center justify-center section-padding space-y-8 space-y-reverse mx-auto py-12 md:space-x-8 md:space-y-0">
+                <div class="flex flex-col w-full md:w-2/5 lg:w-3/5">
+                    <p class="text-xl lg:text-2xl text-left">
                         Hi, my name is
                     </p>
-                    <h1 class="text-5xl text-left font-bold md:text-left mb-4">
+                    <h1 class="text-[#005C78]  text-4xl lg:text-6xl text-left font-bold mb-4 uppercase">
                         Xavier Olivares
                     </h1>
-                    <p class="text-3xl text-left md:text-left mb-2">
+                    <p class="text-2xl lg:text-3xl text-left mb-2">
                         I am a registered nurse trying to learn something new.
                     </p>
-                    <p class="text-xl text-left md:text-left">
-                        Follow me in my journey to becoming a <strong>Front End Developper. </strong>
+                    <p class="text-lg lg:text-xl text-left">
+                        Follow me in my journey to become a <strong>Front End Developper. </strong>
                     </p>
                 </div>
-                <div class="w-1/2 max-w-md">
-                    <img src="./assets/images/myPicture.jpg" alt="" class="rounded-3xl ">
+                <div class="w-8/12 max-w-md md:w-3/5 lg:w-2/5">
+                    <img src="./assets/images/myPicture.jpg" alt="" class="rounded-3xl">
                 </div>
             </div>
         </section>
-        <!--@todo About-->
+        <!--About-->
+        <section id="about">
+            <div class="section-padding flex bg-[#F3F7EC]">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quas soluta amet blanditiis ducimus iusto itaque accusamus libero animi in cumque et accusantium porro, incidunt eum aspernatur eos ratione ut molestiae. Ipsa provident debitis inventore tempore quidem! Consequatur repellendus quisquam excepturi placeat quam. Quasi iste repellat culpa sapiente a alias expedita obcaecati excepturi deleniti itaque unde temporibus corporis ad blanditiis dolore maxime sed aut quia rem neque necessitatibus, architecto assumenda voluptatem adipisci? Adipisci voluptatem ex nulla aperiam magni quia voluptas error enim doloremque autem aliquam consequatur ullam rerum ut eos, numquam vitae esse hic reprehenderit fugit deserunt iusto natus. Ipsa doloribus, quia reprehenderit pariatur accusantium dicta unde eligendi eaque numquam voluptas repellendus necessitatibus, nihil illo molestias dolorum excepturi et quidem iste tenetur voluptate enim. Perferendis provident cupiditate a error fugiat impedit ullam maxime nemo expedita animi eius molestiae sequi, voluptatem omnis quae numquam distinctio praesentium eos molestias blanditiis dolorum magni atque iste! Quae in consequuntur ipsum, eius nisi, impedit pariatur adipisci inventore, facilis mollitia cumque? Repellendus eveniet earum voluptatum, architecto pariatur impedit iusto ducimus odit optio. Exercitationem officia architecto, illum blanditiis ipsam quae ut accusamus totam in dolorum. Culpa incidunt aliquid ex, vitae ab voluptatem deleniti voluptate illum quisquam doloribus, possimus, debitis sit excepturi enim distinctio suscipit eaque labore inventore consectetur quod nihil velit esse consequuntur! Fugit quia numquam necessitatibus perferendis odit! Nostrum, fuga alias vitae quos magni repellendus expedita, libero hic cumque voluptatem harum assumenda sapiente dolor, nam consequuntur perferendis. Id quae laudantium beatae voluptas doloribus aspernatur est cum assumenda repudiandae commodi adipisci unde at sunt eos quaerat nesciunt, iure, perferendis dicta blanditiis sapiente, officiis sed. Omnis possimus eos cupiditate corrupti voluptatem itaque recusandae dolor repellendus libero enim ab distinctio, rerum assumenda aspernatur deserunt laudantium dicta. Nesciunt non ipsa voluptatum dolorem sint nostrum deleniti officiis dolores explicabo laborum modi maiores asperiores enim, repellendus totam optio vel! Aspernatur, sed blanditiis illum fugiat alias similique quibusdam adipisci quasi corporis dolorum minima consequuntur quidem accusamus aperiam atque eaque corrupti molestias dicta cumque. Blanditiis voluptatem quia a doloribus. Temporibus alias odio ea placeat nemo qui voluptates similique. Nisi quod nemo eos quo quidem. Voluptatibus quasi sed magni soluta laboriosam earum ipsam, autem hic excepturi molestiae consectetur est iusto aut officiis dolores itaque ea animi perspiciatis veritatis dicta cum provident nisi aspernatur. Quibusdam nisi aliquam ratione, repellat sapiente, exercitationem neque facilis accusantium deserunt perferendis et quisquam dolores velit a dolorum recusandae. Eum, quaerat autem obcaecati quod dolores minus minima eos ab, illum nulla voluptatem, vitae porro facilis aut tempore vel aliquam molestias similique laudantium quia temporibus! In necessitatibus eum rem assumenda distinctio dolorem enim, sequi earum tenetur soluta ducimus, commodi nobis dolore sint labore sit temporibus explicabo neque! Eius, necessitatibus. Iure delectus dolor autem minus suscipit nam, distinctio minima iste earum nulla, sed exercitationem, cumque deserunt. Doloremque quibusdam vel cumque hic earum nam, repellendus odio rerum. Excepturi officiis natus ex ipsam minima minus molestias iste dicta nisi sed voluptate dolore non expedita ea hic sapiente aliquam, ipsa debitis. Assumenda velit corporis adipisci iure eius, sapiente tenetur labore porro commodi sequi ab officia quae aperiam in nostrum quidem dolor quas beatae placeat voluptatem aliquam et quo quibusdam ut! Perferendis itaque minus voluptatum voluptates distinctio dolore, quaerat dolores aliquam ullam dicta magni alias illum odio sapiente accusamus maiores repellat sequi. Labore commodi, repellendus facilis optio itaque odio molestiae vero ipsum provident pariatur non voluptates iste nemo iusto obcaecati consectetur. Veritatis voluptatum sequi atque! Repellendus corrupti recusandae, expedita eius libero assumenda, temporibus itaque sunt tempora animi nemo sit tempore non rem consequuntur quaerat repellat explicabo asperiores enim dicta amet iure odio dignissimos ad? Veritatis id ullam deleniti temporibus ipsum nihil aperiam quam molestiae, quidem perferendis facilis quas voluptas distinctio dolorum incidunt aut eaque eligendi consequuntur consectetur quod tempore voluptatum pariatur! Ipsa dolores ea dignissimos sint corrupti in deserunt maiores repellat deleniti dicta, adipisci doloribus quas natus soluta obcaecati magni laudantium et sequi, atque nostrum sit? Sed delectus eligendi cumque temporibus quo nobis minus tenetur, quasi necessitatibus facilis, aliquid totam doloremque nam blanditiis iusto repellat optio, explicabo consequatur obcaecati accusantium! Voluptas, iste. Porro quae quibusdam eius aliquam quis minus, maiores dolorem? Est quam iusto natus dolor. Alias itaque similique sit reiciendis! Atque laudantium dolor, exercitationem architecto repudiandae tempora repellendus ratione facilis corporis ab odio ducimus assumenda! Vitae reprehenderit aliquid autem quos, similique tempora beatae distinctio rem quas accusantium ullam fugiat itaque facere placeat dolores blanditiis? Consequatur consequuntur fugiat necessitatibus quas? Impedit repellat qui deserunt. Unde id recusandae, illum repudiandae laborum eius aspernatur fuga blanditiis voluptatibus quis sint exercitationem? Architecto blanditiis vitae officia tenetur quo? Animi non, magnam iusto iste quis cum aspernatur explicabo! Sunt nobis perferendis deleniti? Cumque veniam temporibus officiis architecto ea hic totam odio quos, tempore possimus sed impedit magnam asperiores porro fugiat? Perspiciatis officiis eum ad quos voluptatum nihil corporis sint tempore quisquam? Officia neque aperiam aspernatur, non sunt tenetur, laboriosam reprehenderit, ullam eos qui dolores cumque iusto. Alias porro vel nobis quos dolor aliquam? Consequatur odit minus aut quae animi tempora beatae nihil, quia error hic earum iusto autem asperiores architecto deserunt cupiditate recusandae reiciendis blanditiis reprehenderit dolorem. Aut minus quam praesentium officia ad officiis laborum dolor doloremque itaque. Impedit cum, corporis similique libero esse enim eius corrupti, cumque nesciunt praesentium, commodi eum. Quia expedita aliquid eaque commodi exercitationem unde ipsam impedit vero neque eligendi quae, non fuga iusto praesentium voluptas qui maiores mollitia nemo voluptatem dolores ipsum itaque numquam consequatur? Id, quisquam dolorem eum nesciunt eos facere sequi eaque harum distinctio. Libero, nesciunt repellat. Debitis cupiditate veritatis recusandae repellat accusantium laboriosam dolore consectetur cumque voluptate, vero, quibusdam quae? Tempora iusto praesentium temporibus? Quibusdam quas eveniet cum ab consequatur necessitatibus, nesciunt ullam quidem rem ut debitis impedit, voluptatum perspiciatis et deleniti ad. Optio, pariatur? Minus vitae sunt sapiente, beatae sequi eaque architecto et sed, laboriosam magni id dicta eius libero vero saepe dolor ipsa esse dolores inventore aut doloremque? Voluptas consectetur, autem ullam hic, quas labore fuga quibusdam animi laboriosam officia magni reprehenderit rem maxime ex nisi necessitatibus, quidem nulla! Earum ipsum quisquam tempore.</div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequuntur eveniet ut, non cupiditate nulla vitae eum quas aliquam eos.</div>
+            </div>
+        </section>
         <!--@todo Skills-->
         <!--@todo Projects-->
         <!--@todo Resume-->
         <!--@todo Contact-->
         <!--@todo footer-->
+        <script src="./js/script.js" defer></script>
     </body>
 </html>
