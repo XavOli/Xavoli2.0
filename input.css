@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-#hero{
+/*#hero{
     background-image: url('../assets/images/navbar.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-}
+}*/
 
 .nav-link{
     @apply hover:underline decoration-white hover:scale-110;
@@ -26,7 +26,7 @@
     height:2px;
     top:0;
     left:0;
-    background:white;
+    background:black;
     transform:rotate(0);
     transition:all 0.5s;
 }
