@@ -649,6 +649,15 @@ video {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -661,8 +670,16 @@ video {
   flex-direction: column-reverse;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -671,6 +688,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -689,6 +710,18 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -711,6 +744,16 @@ video {
 .bg-\[\#F3F7EC\] {
   --tw-bg-opacity: 1;
   background-color: rgb(243 247 236 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#b0b4aa\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(176 180 170 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f7f9f5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 249 245 / var(--tw-bg-opacity));
 }
 
 .py-12 {
@@ -896,8 +939,16 @@ video {
     width: 60%;
   }
 
+  .md\:w-1\/5 {
+    width: 20%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -916,6 +967,12 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0px * var(--tw-space-x-reverse));
+    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:rounded-xl {
