@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h2 {
+    @apply text-3xl font-semibold text-headerBlue text-center md:text-left;
+  }
+}
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
@@ -64,4 +69,16 @@
 /* Scroll transparency */
 .scroll-nav {
   @apply opacity-90;
+}
+
+.skillItemContainer {
+  @apply flex flex-col items-start justify-center;
+}
+
+.progContainer {
+  @apply w-full bg-gray-200 rounded-full h-5 dark:bg-gray-700;
+}
+
+.progFill {
+  @apply bg-navOrange h-5 rounded-full;
 }

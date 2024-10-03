@@ -70,11 +70,11 @@
             <div class="section-padding flex flex-col md:flex-row items-center justify-around space-y-8 md:space-y-0 md:space-x-4 animate-fadeUp ">
                 <!-- About text -->
                 <div class="w-full max-w-lg space-y-2 md:border-l-8 md:pl-6 border-navOrange">
-                    <h1 class="text-3xl font-semibold text-headerBlue text-center md:text-left">About Me</h1>
+                    <h2>About Me</h2>
                     <p class="text-center  text-paraBlue text-lg md:text-left">I am a detail-oriented, goal driven individual working towards a new career. I want to use the critical thinking I developed in my multiple years of nursing to create <strong>responsive</strong> and <strong>accessible</strong> solutions that can be accessed by every user. I am a great team player who loves to learn new ways to solve complex problems. I'm just getting started, but there's a lot more to come. 
                     </p>
                 </div>
-                <!-- About icons -->
+                <!-- About icons container -->
                 <div class="flex md:flex-col items-start justify-around space-x-6 md:space-x-0 md:space-y-4 text-white border-4 p-4 bg-headerBlue rounded-xl">
                     <a href="https://github.com/XavOli" class="flex items-center space-x-2 hover:scale-105">
                         <i class="fa-brands fa-square-github fa-3x "></i>
@@ -92,9 +92,95 @@
             </div>
         </section>
         <!-- Skills section -->
-        <sectopm id="skills">
-            
-        </sectopm>
+        <section id="skills">
+            <!-- Section container -->
+            <div class="section-padding mt-8 space-y-4 flex flex-col">
+                <!-- Section title -->
+                <h2>Skills</h2>
+                <!-- Skills grid container -->
+                <div class="grid grid-cols-1 md:grid-cols-2 grid-flow-row justify-center gap-4 gap-y-8 items-start">
+                    <!-- Skill item 1 -->
+                    <div class="skillItemContainer">
+                        <!-- Skill logo + text -->
+                        <div class="flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-html5 fa-2x"></i>
+                            <h6 class="text-lg font-semibold">HMTL5</h6>
+                        </div>
+                        <!-- Skill progress bar -->
+                        <div class="progContainer">
+                            <div class="progFill" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill item 2 -->
+                    <div class="skillItemContainer">
+                        <!-- Skill logo + text -->
+                        <div class="flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-css3-alt fa-2x"></i>
+                            <h6 class="text-lg font-semibold">CSS3</h6>
+                        </div>
+                        <!-- Skill progress bar -->
+                        <div class="progContainer">
+                            <div class="progFill" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill item 3 -->
+                    <div class="skillItemContainer">
+                        <!-- Skill logo + text -->
+                        <div class="flex items-center justify-center space-x-2">
+                            <img src="./assets/logo/svg/tailwind.svg" alt="">
+                            <h6 class="text-lg font-semibold">Tailwind</h6>
+                        </div>
+                        <!-- Skill progress bar -->
+                        <div class="progContainer">
+                            <div class="progFill" style="width: 75%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill item 4 -->
+                    <div class="skillItemContainer">
+                        <!-- Skill logo + text -->
+                        <div class="flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-sass fa-2x"></i>
+                            <h6 class="text-lg font-semibold">SASS</h6>
+                        </div>
+                        <!-- Skill progress bar -->
+                        <div class="progContainer">
+                            <div class="progFill" style="width: 20%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill item 5 -->
+                    <div class="skillItemContainer">
+                        <!-- Skill logo + text -->
+                        <div class="flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-bootstrap fa-2x"></i>
+                            <h6 class="text-lg font-semibold">Bootstrap</h6>
+                        </div>
+                        <!-- Skill progress bar -->
+                        <div class="progContainer">
+                            <div class="progFill" style="width: 30%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill item 6 -->
+                    <div class="skillItemContainer">
+                        <!-- Skill logo + text -->
+                        <div class="flex items-center justify-center space-x-2">
+                            <img src="./assets/logo/svg/loading-spinner.svg" alt="" class="animate-spin-slow w-8">
+                            <h6 class="text-lg font-semibold">Learning in progress...</h6>
+                        </div>
+                        <!-- Skill progress bar -->
+                        <div class="progContainer">
+                            <div class="progFill animate-pulse" style="width:100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+        <div class="h-screen"></div>
         <!--@todo Projects-->
         <!--@todo Resume-->
         <!--@todo Contact-->

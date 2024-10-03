@@ -59,6 +59,7 @@ module.exports = {
         fadeLeft: 'fadeLeft 1s ease-in-out 1',
         fadeRight: 'fadeRight 1s ease-in-out 1',
         fadeUp: 'fadeUp 1s ease-in-out 1',
+        'spin-slow': 'spin 1.5s linear infinite',
       },
     },
   },
